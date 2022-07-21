@@ -131,19 +131,28 @@ section {
 }
 
 .work {
-    padding-bottom: 102px;
+    padding-bottom: 0px;
+    .work-list {
+        background: url(../img/photo-1561291386-5be50364cfb5.png) center no-repeat;
+        background-size: cover;
+        padding-bottom: 118px;
+        ul{
+            display: flex;
+            &:nth-child(1) {
+                margin-top: -80px;
+            }
+            li+li {
+                margin-left: 24px;
+            }
+        }
+    }
     p {
         font-size: 20px;
         line-height: 42px;
         margin-top: 16px;
-        margin-bottom: 48px;
+        margin-bottom: 128px;
     }
-    ul{
-        display: flex;
-        li+li {
-            margin-left: 24px;
-        }
-    }
+
 }
 
 footer {
